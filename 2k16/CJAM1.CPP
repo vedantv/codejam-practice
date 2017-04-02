@@ -14,6 +14,8 @@ int num,rem,temp,n0,n1,n2,n3,n4,n5,n6,n7,n8,n9;
 for(i=0;i<T;i++)
 {
  n0=n1=n2=n3=n4=n5=n6=n7=n8=n9=0;
+	if(a[i]==0)
+	{continue;}
  for(j=1;j<1000;j++)
  {
 	num=a[i]*j;
@@ -58,6 +60,10 @@ for(i=0;i<T;i++)
 	x:
 }
 for(i=0;i<T;i++)
-{cout<<"case #"<<i+1<<": "<<a[i]<<endl;}
+{
+	if(a[i]==0)
+	{cout<<"case #"<<i+1<<": INSOMNIA"endl;}
+	else
+	{cout<<"case #"<<i+1<<": "<<a[i]<<endl;}
 getch();
 }
