@@ -10,14 +10,13 @@ for(i=0;i<T;i++)
  cin>>a[i];
 }
 int num,rem,temp,n0,n1,n2,n3,n4,n5,n6,n7,n8,n9;
-n0=n1=n2=n3=n4=n5=n6=n7=n8=n9=0;
+
 for(i=0;i<T;i++)
 {
- num=a[i];
- cout<<"num="<<num<<endl;
+ n0=n1=n2=n3=n4=n5=n6=n7=n8=n9=0;
  for(j=1;j<1000;j++)
  {
-	num=num*j;
+	num=a[i]*j;
 	if(n0==0||n1==0||n2==0||n3==0||n4==0||n5==0||n6==0||n7==0||n8==0||n9==0)
 	{
 	temp=num;
@@ -51,13 +50,14 @@ for(i=0;i<T;i++)
 	}
 	else
 	{
-	cout<<"value of n flags="<<n0<<n1<<n2<<n3<<n4<<n5<<n6<<n7<<n8<<n9;
 	a[i]=temp;
+	goto x;
 	}
-	break;
+	
  }
+	x:
 }
 for(i=0;i<T;i++)
-{cout<<"answer="<<a[i]<<endl;}
+{cout<<"case #"<<i+1<<": "<<a[i]<<endl;}
 getch();
 }
