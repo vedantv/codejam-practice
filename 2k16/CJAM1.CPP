@@ -65,5 +65,6 @@ for(i=0;i<T;i++)
 	{cout<<"case #"<<i+1<<": INSOMNIA"endl;}
 	else
 	{cout<<"case #"<<i+1<<": "<<a[i]<<endl;}
+}
 getch();
 }
