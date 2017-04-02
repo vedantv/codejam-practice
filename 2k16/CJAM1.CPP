@@ -58,6 +58,6 @@ for(i=0;i<T;i++)
  }
 }
 for(i=0;i<T;i++)
-{cout<<"answer="<<a[T]<<endl;}
+{cout<<"answer="<<a[i]<<endl;}
 getch();
 }
